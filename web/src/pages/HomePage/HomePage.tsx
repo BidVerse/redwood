@@ -15,7 +15,7 @@ const Post = (data) => (
   </>
 )
 
-const List = [1, 2, 3, 4].map((item) => Post(item))
+const List = [1, 2, 3, 4, 5].map((item) => Post(item))
 
 const HomePage = () => {
   return <>{List}</>
