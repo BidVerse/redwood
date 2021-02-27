@@ -1,8 +1,6 @@
 export const handler = async (_event, _context) => {
   return {
     statusCode: 200,
-    body: JSON.stringify({
-      data: 'Server Time: ' + Date(),
-    }),
+    body: 'Server Time: ' + Date(),
   }
 }
