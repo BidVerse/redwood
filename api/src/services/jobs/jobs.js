@@ -8,5 +8,5 @@ export const Job = {
   from: (_obj, { root }) =>
     db.job.findUnique({ where: { id: root.id } }).from(),
   offers: (_obj, { root }) =>
-    db.job.findUnique({ where: { id: root.id } }).Offers(),
+    db.job.findUnique({ where: { id: root.id } }).offers(),
 }

@@ -6,7 +6,7 @@ export const users = () => {
 
 export const User = {
   offers: (_obj, { root }) =>
-    db.user.findUnique({ where: { id: root.id } }).Offers(),
+    db.user.findUnique({ where: { id: root.id } }).offers(),
   jobs: (_obj, { root }) =>
-    db.user.findUnique({ where: { id: root.id } }).Jobs(),
+    db.user.findUnique({ where: { id: root.id } }).jobs(),
 }
