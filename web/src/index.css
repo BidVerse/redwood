@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 :root {
   --color-primary: rgb(36, 45, 53);
@@ -6,8 +6,13 @@
   --color-primary-light: rgb(223, 228, 231);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font: 'Inter', sans-serif;
+  text-align:justify
 }
 
 body {
@@ -42,6 +47,26 @@ a {
   text-decoration: none;
 }
 
+table {
+  border-collapse:separate;
+  width: 100%;
+  table-layout : fixed;
+  border: 4pt solid var(--color-primary);
+  border-radius: 3pt;
+  background-color: var(--color-primary)
+}
+
+tr {
+  background-color: var(--color-primary);
+  border: 2pt solid var(--color-primary);
+  /* color: white; */
+}
+
+td {
+  padding: 5pt;
+  color: white;
+}
+
 a:visited {
   text-decoration: none;
   color: unset;
@@ -59,6 +84,34 @@ a:active {
   text-decoration: none;
   color: unset;
 }
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  font-size: 14pt;
+  margin-top: 10pt;
+  font-family: 'Inter'
+ }
+
+ button {
+  border: none;
+  font-size: 16pt;
+  margin: 20pt 0pt;
+  border-radius: 3pt;
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 5pt 10pt;
+  background-color: var(--color-primary-accent);
+  color: white;
+ }
+
+ button:hover {
+   background-color: var(--color-primary)
+ }
 
 .hero {
   padding: 50pt;
@@ -165,4 +218,85 @@ a:active {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.post-page img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-page .content {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  padding: 15pt 30pt
+}
+
+.post-page .content .info {
+  padding: 0 20pt
+}
+
+.post-page h1 {
+  font-size: 30pt;
+  margin: 10pt
+}
+
+.post-page h2 {
+  font-size: 24pt;
+  font-weight: 600;
+  margin: 10pt 0pt;
+}
+
+.post-page pre {
+  font-size: 16pt;
+  margin: 10pt;
+}
+
+.profile-large {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-large img {
+  border-radius: 4pt;
+  transform: scale(0.9);
+}
+
+.profile-large .info {
+  padding: 0 20pt;
+}
+
+.offers {
+  padding: 30pt 60pt;
+}
+
+.place-offer {
+  margin-bottom: 20pt;
+}
+
+.place-offer td {
+  font-size: 20pt;
+}
+
+.place-offer input {
+  border: none;
+  font-size: 16pt;
+  margin: 20pt 0pt;
+  border-radius: 3pt;
+  width: 400pt;
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 5pt;
+  background-color: var(--color-primary-accent);
+  color: white;
+}
+
+.place-offer {
+  display: inline-flex;
+  margin: 10pt;
+}
+
+.place-offer button {
+  margin-left: 10pt;
 }

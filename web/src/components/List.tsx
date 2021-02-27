@@ -1,6 +1,6 @@
 import Post from './Post'
 
-const List = new Array(10)
+export const List = new Array(10)
   .fill({
     name: 'Parametric Logo Design',
     image:
