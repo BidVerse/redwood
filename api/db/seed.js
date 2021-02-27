@@ -11,17 +11,17 @@ async function main() {
   // Ideally this file should be idempotent: running it multiple times
   // will result in the same database state (usually by checking for the
   // existence of a record before trying to create it). For example:
+  const _ = await db.user.create({
+    data: {
+      email: 'swerdlowbenjamin@gmail.com',
+      password: 'swerdtheword',
+      name: 'ben',
+      bio: 'the creator',
+      role: 'Bidder',
+    },
+  })
   /*
-    const result = await db.user.createMany({
-      data: [
-        { email: "alice@example.com" },
-        { email: "mark@example.com" },
-        { email: "jackie@example.com" },
-        { email: "bob@example.com" },
-      ],
-      skipDuplicates: true, // Supported with Postgres database
-    })
-    console.log(`Created ${result.count} users!`)
+
   */
   // Note: createMany creates multiple records in a transaction.
   // To enable this feature, add createMany to previewFeatures in your schema.
