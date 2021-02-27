@@ -5,18 +5,6 @@ import Hero from '../../components/Hero'
 import TopBar from '../../components/TopBar'
 import List from '../../components/List'
 
-// type User = {
-//     id: string,
-//     email: string,
-//     password: string,
-//     name: string,
-//     bio: string,
-//     profileImgUrl: string,
-//     role: string,
-//     offers: string,
-//     jobs: string,
-//   }
-
 const HomePage = () => {
   return (
     <>

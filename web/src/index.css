@@ -37,6 +37,29 @@ p {
   margin: 5pt;
 }
 
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: unset;
+}
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+a:focus {
+  text-decoration: none;
+  color: unset;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: unset;
+}
+
 .hero {
   padding: 50pt;
   background-color: var(--color-primary);
