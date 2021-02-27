@@ -2,6 +2,8 @@
 
 :root {
   --color-primary: rgb(36, 45, 53);
+  --color-primary-accent: rgb(56, 70, 82);
+  --color-primary-light: rgb(223, 228, 231);
 }
 
 html {
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-primary-light);
   margin: 0;
   padding: 0;
 }
@@ -79,6 +81,8 @@ p {
   text-align: center;
   outline: none;
   padding: 5pt;
+  background-color: var(--color-primary-accent);
+  color: white;
 }
 
 .list {
@@ -115,7 +119,7 @@ p {
 
 .profileSmall {
   display: inline-flex;
-  background-color: rgb(245, 245, 245);
+  background-color: var(--color-primary-light);
   border-radius: 3pt;
   height: 25pt;
   margin: 5pt;
