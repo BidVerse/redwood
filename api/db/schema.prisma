@@ -34,7 +34,7 @@ model Job {
   name        String
   description String
   photoUrl    String
-  minimumBid  Int
+  minimumBid  Int     @default(0)
   Offer       Offer[]
   active      Boolean @default(true)
 }
