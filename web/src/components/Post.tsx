@@ -1,6 +1,21 @@
-import type { Post } from '../types'
 import ProfileSmall from './ProfileSmall'
 import Graph from './Graph'
+
+export type Post = {
+  name: string
+  image: string
+  minimumBid: number
+  description: string
+  id: string
+  seller: {
+    name: string
+    id: string
+    image: string
+  }
+}
+
+//@ts-ignore
+import { Link, routes } from '@redwoodjs/router'
 
 const PostComponent = (post: Post) => {
   function expandPost() {
@@ -8,15 +23,17 @@ const PostComponent = (post: Post) => {
   }
   return (
     <>
-      <div className="listing" onClick={expandPost}>
-        <img src={post.image}></img>
-        <div className="info">
-          <h1>{post.name}</h1>
-          <p>{post.description.substr(0, 150) + '...'}</p>
-          {ProfileSmall(post.seller)}
-          {/* {Graph()} */}
+      <Link to={routes.post({ id: post.id })}>
+        <div className="listing" onClick={expandPost}>
+          <img src={post.image}></img>
+          <div className="info">
+            <h1>{post.name}</h1>
+            <p>{post.description.substr(0, 150) + '...'}</p>
+            {ProfileSmall(post.seller)}
+            {/* {Graph()} */}
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   )
 }
