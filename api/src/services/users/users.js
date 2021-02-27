@@ -1,7 +1,12 @@
 import { db } from 'src/lib/db'
 
-export const users = () => {
-  return db.user.findMany()
+export const users = ({ id, name }) => {
+  return db.user.findMany({
+    where: {
+      id,
+      name,
+    },
+  })
 }
 
 export const User = {
