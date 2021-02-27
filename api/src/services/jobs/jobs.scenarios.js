@@ -5,8 +5,7 @@ export const standard = defineScenario({
       name: 'String',
       description: 'String',
       photoUrl: 'String',
-      minimumBid: 2188998,
-      from: { create: { email: 'String2053080', password: 'String' } },
+      from: { create: { email: 'String8684506', password: 'String' } },
     },
 
     two: {
@@ -14,8 +13,7 @@ export const standard = defineScenario({
       name: 'String',
       description: 'String',
       photoUrl: 'String',
-      minimumBid: 4855805,
-      from: { create: { email: 'String7787260', password: 'String' } },
+      from: { create: { email: 'String9176756', password: 'String' } },
     },
   },
 })

@@ -2,12 +2,13 @@ export const schema = gql`
   type User {
     id: String!
     email: String!
+    password: String!
     name: String
     bio: String
     profileImgUrl: String
     role: Role!
-    Offer: [Offer]!
-    Job: [Job]!
+    offers: [Offer]!
+    jobs: [Job]!
   }
 
   enum Role {

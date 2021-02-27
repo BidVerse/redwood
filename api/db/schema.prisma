@@ -18,8 +18,8 @@ model User {
   bio           String? @default("I have a boring bio")
   profileImgUrl String?
   role          Role    @default(Bidder)
-  Offer         Offer[]
-  Job           Job[]
+  offers        Offer[]
+  jobs          Job[]
 }
 
 enum Role {
@@ -35,7 +35,7 @@ model Job {
   description String
   photoUrl    String
   minimumBid  Int     @default(0)
-  Offer       Offer[]
+  offers      Offer[]
   active      Boolean @default(true)
 }
 

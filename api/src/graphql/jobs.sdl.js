@@ -7,7 +7,7 @@ export const schema = gql`
     description: String!
     photoUrl: String!
     minimumBid: Int!
-    Offer: [Offer]!
+    offers: [Offer]!
     active: Boolean!
   }
 
