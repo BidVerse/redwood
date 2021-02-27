@@ -1,3 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --color-primary: rgb(36, 45, 53);
+}
+
+html {
+  font: 'Inter', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 20pt;
+  margin: 5pt;
+}
+
+h2 {
+  font-size: 14pt;
+  margin: 5pt;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 12pt;
+  margin: 5pt;
+}
+
+p {
+  font-size: 12pt;
+  margin: 5pt;
+}
+
+.hero {
+  padding: 50pt;
+  background-color: var(--color-primary);
+}
+
+.hero h1 {
+  font-size: 40pt;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  font-size: 16pt;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.heroExtender {
+  background-color: var(--color-primary);
+  height: 50pt;
+}
+
+.topBar {
+  width: 100%;
+  background-color: var(--color-primary);
+  position: sticky;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+}
+
+.searchBar {
+  border: none;
+  font-size: 16pt;
+  margin: 5pt auto;
+  border-radius: 3pt;
+  width: 400pt;
+  display: block;
+  text-align: center;
+  outline: none;
+  padding: 5pt;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10pt;
+  margin: 10pt;
+  padding: 0 30pt;
+}
+
 .listing {
-  background-color: lightblue;
+  background-color: rgb(243, 243, 243);
+  margin: 5pt;
+  display: inline-flex;
+  width: 100%;
+  transition: 200ms;
+}
+
+.listing:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.listing img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.info {
+  padding: 5pt;
+}
+
+.profileSmall {
+  display: inline-flex;
+  background-color: rgb(245, 245, 245);
+  border-radius: 3pt;
+  height: 25pt;
+  margin: 5pt;
+}
+
+.profileSmall img {
+  height: 25pt;
+  width: 25pt;
+  border-radius: 3pt;
+}
+
+.profileSmall h3 {
+  margin: 5pt;
+  height: 20px;
+}
+
+.profileSmall .info {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
